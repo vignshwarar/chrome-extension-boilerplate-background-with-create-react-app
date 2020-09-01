@@ -2,6 +2,7 @@ Chrome extension boilerplate(background) with create-react-app before `npm start
 both directory current directory and ./background 
 
 As a sample I've added Covid stats component with this API `https://coronavirus-19-api.herokuapp.com/countries/USA`
+![sample](https://raw.githubusercontent.com/vignshwarar/chrome-extension-boilerplate-background-with-create-react-app/master/sample.gif)
 
 ## Available Scripts
 
