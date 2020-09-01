@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "version": "1",
+  "short_name": "Covid tracker",
+  "name": "Covid tracker",
+  "description": "Get current corona cases for US",
+  "icons": {
+    "192": "logo192.png",
+    "152": "logo512.png"
+  },
+  "browser_action": {},
+  "permissions": [
+    "contextMenus", "activeTab",  "storage"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+Shift+C",
+        "mac": "Alt+Shift+C",
+        "chromeos": "Alt+Shift+C",
+        "linux": "Alt+Shift+C"
+      }
+    }
+  }
+}

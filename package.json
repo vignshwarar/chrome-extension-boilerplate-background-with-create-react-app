@@ -1,0 +1,46 @@
+{
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "framer-motion": "^2.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "react-shadow": "^18.3.0",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:remove:unwanted": "rimraf build/bundle.min.js.LICENSE.txt  build/service-worker.js  build/precache-manifest.*  build/index.html build/asset-manifest.json build/robots.txt",
+    "build:prod:background": "npm run build:prod -y --prefix background",
+    "build:dev:background": "npm run build:dev -y --prefix background",
+    "prod:build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build && npm run build:prod:background && npm run build:remove:unwanted",
+    "dev:build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build && npm run build:dev:background && npm run build:remove:unwanted",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "react-app-rewired": "^2.1.6",
+    "rimraf": "^3.0.2"
+  }
+}

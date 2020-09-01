@@ -1,0 +1,19 @@
+{
+  "name": "background",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "cross-env BUILD_ENV=dev parcel build index.js -o background.js --no-source-maps --out-dir ../build",
+    "build:prod": "cross-env BUILD_ENV=prod parcel build index.js -o background.js --no-source-maps  --out-dir ../build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}

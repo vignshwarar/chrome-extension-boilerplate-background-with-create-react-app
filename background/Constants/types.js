@@ -1,0 +1,1 @@
+export const COVID_DATA_LOADED = 'COVID_DATA_LOADED';
